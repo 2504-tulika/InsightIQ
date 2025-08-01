@@ -55,17 +55,36 @@ Designed with a glowing, subtle, elegant interface for intuitive usage.
 ```bash
 git clone https://github.com/your-username/InsightIQ.git
 cd InsightIQ
----
-2. **Install the dependencies**
+
+2. Create and Activate a Virtual Environment
 
 ```bash
+# For Windows
+python -m venv venv
+venv\Scripts\activate
+
+# For macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+3. **Install the dependencies**
+```bash
 pip install -r requirements.txt
----
-3. **Configure API Keys**
-Create a .env file in the root with:
+Also create .streamlit/config.toml and add:
+**CODE:**(For ui interface styling)
+[theme]
+base="dark"
+primaryColor="#00FFC6"         # Neon mint/cyan
+backgroundColor="#121212"      # Deep dark gray
+secondaryBackgroundColor="#1E1E1E"
+textColor="#F8F8F8"
+font="sans serif"
+
+4. **Configure API Keys**
+Create .streamlit/secrets.toml file and inside it:
 OPENROUTER_API_KEY=your_key_here
----
-4. **Run the App**
+
+5. **Run the App**
 ```bash
 streamlit run agent.py
 
