@@ -27,10 +27,6 @@ Charts like bar plots, line graphs, pie charts, and histograms are auto-generate
 ✅ **Conversational Memory**  
 Your queries and results are remembered — allowing you to ask follow-up questions with context.
 
-✅ **Multi-Table Joins**  
-Upload multiple related datasets and ask questions like:  
-_"Join customers.csv and orders.csv on customer_id and show total orders per customer."_
-
 ✅ **Beautiful Dark UI**  
 Designed with a glowing, subtle, elegant interface for intuitive usage.
 
