@@ -70,8 +70,10 @@ source venv/bin/activate
 3. **Install the dependencies**
 ```bash
 pip install -r requirements.txt
-Also create .streamlit/config.toml and add:
-**CODE:**(For ui interface styling)
+
+4. UI Theme Configuration
+Create .streamlit/config.toml and add the following:
+
 [theme]
 base="dark"
 primaryColor="#00FFC6"         # Neon mint/cyan
@@ -80,8 +82,8 @@ secondaryBackgroundColor="#1E1E1E"
 textColor="#F8F8F8"
 font="sans serif"
 
-4. **Configure API Keys**
-Create .streamlit/secrets.toml file and inside it:
+5. **Configure API Keys**
+Create .streamlit/secrets.toml file and add:
 OPENROUTER_API_KEY=your_key_here
 
 5. **Run the App**
