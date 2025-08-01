@@ -56,7 +56,7 @@ Designed with a glowing, subtle, elegant interface for intuitive usage.
 git clone https://github.com/your-username/InsightIQ.git
 cd InsightIQ
 
-2. **Install Dependencies**
+2. **Install the dependencies**
 
 ```bash
 pip install -r requirements.txt
