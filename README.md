@@ -55,16 +55,16 @@ Designed with a glowing, subtle, elegant interface for intuitive usage.
 ```bash
 git clone https://github.com/your-username/InsightIQ.git
 cd InsightIQ
-
+---
 2. **Install the dependencies**
 
 ```bash
 pip install -r requirements.txt
-
+---
 3. **Configure API Keys**
 Create a .env file in the root with:
 OPENROUTER_API_KEY=your_key_here
-
+---
 4. **Run the App**
 ```bash
 streamlit run agent.py
