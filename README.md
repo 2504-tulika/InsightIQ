@@ -49,7 +49,7 @@ Designed with a glowing, subtle, elegant interface for intuitive usage.
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/InsightIQ.git
+git clone https://github.com/2504-tulika/InsightIQ
 cd InsightIQ
 
 2. Create and Activate a Virtual Environment
