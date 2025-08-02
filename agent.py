@@ -312,45 +312,62 @@ def main():
 
     st.markdown("""
 <style>
+/* Headings */
 h1, h2, h3, .st-emotion-cache-1kyxreq {
-    color: #00FFC6 !important;
-    text-shadow: 0 0 5px #00FFC6, 0 0 10px #00FFC6;
+    color: #A3E4D7 !important;
+    text-shadow: 0 0 2px #A3E4D7, 0 0 4px #A3E4D7;
     font-weight: bold;
 }
 
+/* Body text and paragraphs */
 .st-emotion-cache-16txtl3 {
-    color: #BBBBBB;
+    color: #F2F2F2;
     font-size: 18px;
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* Chat messages / info cards */
 .stChatMessage {
-    background: linear-gradient(145deg, #1E1E1E, #2A2A2A);
+    background: linear-gradient(145deg, #1A1A1D, #262626);
     border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 8px rgba(0,255,198,0.1);
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 0 10px rgba(163, 228, 215, 0.1);
 }
 
-.stButton>button {
+/* Buttons */
+.stButton > button {
     border-radius: 10px;
-    background-color: #00FFC6;
-    color: black;
+    background-color: #A3E4D7;
+    color: #1A1A1D;
+    font-weight: 600;
     border: none;
-    box-shadow: 0 0 10px #00FFC6;
-    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(163, 228, 215, 0.5);
+    transition: 0.3s ease-in-out;
 }
 
-.stButton>button:hover {
-    background-color: #00BDA6;
-    box-shadow: 0 0 20px #00FFC6;
+.stButton > button:hover {
+    background-color: #8FD6C2;
+    box-shadow: 0 0 20px rgba(163, 228, 215, 0.8);
     transform: scale(1.05);
 }
 
-.stTextInput>div>div>input {
-    background-color: #1E1E1E;
-    color: #FFFFFF;
-    border: 1px solid #00FFC6;
+/* Text inputs */
+.stTextInput > div > div > input {
+    background-color: #262626;
+    color: #F2F2F2;
+    border: 1px solid #A3E4D7;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+/* Optional: Subtle scroll bar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #A3E4D7;
+    border-radius: 10px;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -502,4 +519,5 @@ h1, h2, h3, .st-emotion-cache-1kyxreq {
                 st.rerun()
 
 if __name__ == "__main__":
+
     main() 
