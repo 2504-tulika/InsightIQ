@@ -1,6 +1,6 @@
 # 📊 InsightIQ - Conversational Data Analysis Assistant
 
-InsightIQ is an AI-powered web application that allows users to **conversationally analyze any CSV dataset**. Upload your data, ask questions in natural language, get answers with **intelligent visualizations**, and explore deeper insights with **semantic memory** and **multi-dataset joining**.
+InsightIQ is an AI-powered web application that allows users to **conversationally analyze any CSV dataset**. Upload your data, ask questions in natural language, get answers with **intelligent visualizations**, and explore deeper insights with **semantic memory**.
 
 Built using:
 - 🧠 [LangChain](https://www.langchain.com/) + [OpenRouter](https://openrouter.ai/) + [Cohere Command-R-Plus]
@@ -40,7 +40,7 @@ Designed with a glowing, subtle, elegant interface for intuitive usage.
 | Backend         | Python, Pandas, Matplotlib        |
 | AI Agent        | LangChain + OpenRouter (Cohere)   |
 | Memory          | Streamlit Session / Custom Memory |
-| File Handling   | Multi-CSV Upload + Auto Parsing   |
+| File Handling   |  Auto Parsing                     |
 
 ---
 
@@ -71,12 +71,13 @@ pip install -r requirements.txt
 Create .streamlit/config.toml and add the following:
 
 [theme]
-base="dark"
-primaryColor="#00FFC6"         # Neon mint/cyan
-backgroundColor="#121212"      # Deep dark gray
-secondaryBackgroundColor="#1E1E1E"
-textColor="#F8F8F8"
-font="sans serif"
+base = "dark"
+primaryColor = "#A3E4D7"  # Soft mint/teal
+backgroundColor = "#1A1A1D"  # Rich charcoal grey
+secondaryBackgroundColor = "#262626"  # Muted slate grey
+textColor = "#F2F2F2"  # Light grey-white (not too sharp)
+font = "sans serif"
+
 
 5. **Configure API Keys**
 Create .streamlit/secrets.toml file and add:
